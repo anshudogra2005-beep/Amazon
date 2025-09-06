@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="amazon.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="./image/amazon_logo.png" alt="">
+            </div>
+            <div class="nav-address">
+                <p class="first-address">Diliver to</p>
+                <div class="add-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="second-btn">India</p>
+                </div>
+            </div>
+            <div class="nav-search">
+                <select>
+                    <option>All</option>
+                </select>
+                <input placeholder="search amazon">
+                <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+            </div>
+            <div class="vatan">
+                <img src="data:image/jpeg;base64,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" alt="" class="india">
+                <select>
+                    <option>Ind</option>
+                </select>
+            </div>
+            <div class="hello">
+                <p>Hello,sign in</p>
+                <div class="list">
+                    <p>Accounts$Listes</p>
+                    <select>
+                        <option></option>
+                    </select>
+                </div>
+            </div>
+            <div class="return">
+                <p>Returns</p>
+                <div class="order">
+                    <p>& Orders</p>
+                </div>
+            </div>
+            <div class="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p>Cart</p>
+            </div>
+        </div>
+    </header>
+    <div class="second-bar">
+        <i class="fa-solid fa-bars"></i>
+        <a href="#">All</a>
+        <a href="#">Todays Deals</a>
+        <a href="#">Customer service</a>
+        <a href="#">Registry</a>
+        <a href="#">Gifts</a>
+        <a href="#">Sell</a>
+        <div class="shop">
+           <a href="#">Shops deals in Electronices</a>
+        </div>
+    </div>
+    <div class="hero-section">
+        <div class="para">
+            <p>You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery. <a href="#">Click here to go to amazon.in</a>
+        </div>
+    </div>
+    <div class="shop-section">
+        <div class="box1 box">
+            <h2>Health & Personal Care</h2>
+            <img src="./image/box2_image.jpg" alt="">
+            <a href="#">shop now</a>
+        </div>
+        <div class="box1 box ">
+             <h2>Health & Personal Care</h2>
+            <img src="./image/box1_image.jpg" alt="">
+            <a href="#">shop now</a>
+        </div>
+        <div class="box1 box">
+             <h2>Health & Personal Care</h2>
+            <img src="./image/box4_image.jpg" alt="">
+            <a href="#">shop now</a>
+        </div>
+        <div class="box1 box">
+             <h2>Health & Personal Care</h2>
+            <img src="./image/box3_image.jpg" alt="">
+            <a href="#">shop now</a>
+        </div>
+        
+
+    </div>
+    <div class="shop-section">
+        <div class="box1 box box2">
+            <h2>Health & Personal Care</h2>
+            <img src="./image/box5_image.jpg" alt="">
+            <a href="#">shop now</a>
+        </div>
+        <div class="box1 box box2 ">
+             <h2>Health & Personal Care</h2>
+            <img src="./image/box6_image.jpg" alt="">
+            <a href="#">shop now</a>
+        </div>
+        <div class="box1 box box2">
+             <h2>Health & Personal Care</h2>
+            <img src="./image/box7_image.jpg" alt="">
+            <a href="#">shop now</a>
+        </div>
+        <div class="box1 box box2">
+             <h2>Health & Personal Care</h2>
+            <img src="./image/box8_image.jpg" alt="">
+            <a href="#">shop now</a>
+        </div>
+    </div>
+    <footer>
+        <div class="back">
+            <p>Back to top</p>
+        </div>
+        <div class="footer-two">
+            <div class="boxs boxs1">
+                <p>Get to Know Us</p>
+                <a href="#">Carrer</a>
+                <a href="#">Blog</a>
+                <a href="#">About Amazon</a>
+                <a href="#">Investor Relations</a>
+                <a href="#">Amazon Devices</a>
+                <a href="#">Amazon Science</a>
+            </div>
+            <div class="boxs boxs1"><p>My Money with Us</p>
+                <a href="#">Sell with us</a>
+                <a href="#">Sell on Amazon store</a>
+                <a href="#">Sell app on Amazon</a>
+                <a href="#">Become an Affilate</a>
+                <a href="#">Advance your Product</a>
+                <a href="#">Self-Publice with Us</a>
+                <a href="#">Host on Amazon Hub</a>
+                <a href="#">See More Make Money us</a>
+
+            </div>
+                
+            <div class="boxs boxs1"><p>Get to Know Us</p>
+                <a href="#">Carrer</a>
+                <a href="#">Blog</a>
+                <a href="#">About Amazon</a>
+                <a href="#">Investor Relations</a>
+                <a href="#">Amazon Devices</a>
+                <a href="#">Amazon Science</a></div>
+            <div class="boxs boxs1"><p>Get to Know Us</p>
+                <a href="#">Carrer</a>
+                <a href="#">Blog</a>
+                <a href="#">About Amazon</a>
+                <a href="#">Investor Relations</a>
+                <a href="#">Amazon Devices</a>
+                <a href="#">Amazon Science</a></div>
+        </div>
+        <div class="third-footer">
+            <img src="./image/amazon_logo.png" alt="" class="amazon">
+            <div class="footer-second-part"></div>
+            <select>
+                <option>English</option>
+            </select>
+            <div class="ansh"></div>
+            <select>
+                <option>English</option>
+            </select>
+            <div class="sai"></div>
+            <select>
+                <option>English</option>
+            </select>
+            
+            
+         </div>
+             <div class="fouth-footer">
+                
+                <div class="boxes">
+                    <p>Amazon Music</p>
+                    <a href="#">Stream millions</a>
+                    <a href="#">of songs</a>
+                </div>
+                <div class="boxes">
+                    <p>Amazon Music</p>
+                    <a href="#">Stream millions</a>
+                    <a href="#">of songs</a>
+                </div>
+                <div class="boxes">
+                    <p>Amazon Music</p>
+                    <a href="#">Stream millions</a>
+                    <a href="#">of songs</a>
+                </div>
+                <div class="boxes">
+                    <p>Amazon Music</p>
+                    <a href="#">Stream millions</a>
+                    <a href="#">of songs</a>
+                </div>
+                <div class="boxes">
+                    <p>Amazon Music</p>
+                    <a href="#">Stream millions</a>
+                    <a href="#">of songs</a>
+                </div>
+                <div class="boxes">
+                    <p>Amazon Music</p>
+                    <a href="#">Stream millions</a>
+                    <a href="#">of songs</a>
+                </div>
+                <div class="boxes">
+                    <p>Amazon Music</p>
+                    <a href="#">Stream millions</a>
+                    <a href="#">of songs</a>
+                </div>
+            </div>
+            <div class="fouth-footer">
+                
+                <div class="boxes">
+                    <p>Amazon Music</p>
+                    <a href="#">Stream millions</a>
+                    <a href="#">of songs</a>
+                </div>
+                <div class="boxes">
+                    <p>Amazon Music</p>
+                    <a href="#">Stream millions</a>
+                    <a href="#">of songs</a>
+                </div>
+                <div class="boxes">
+                    <p>Amazon Music</p>
+                    <a href="#">Stream millions</a>
+                    <a href="#">of songs</a>
+                </div>
+                <div class="boxes">
+                    <p>Amazon Music</p>
+                    <a href="#">Stream millions</a>
+                    <a href="#">of songs</a>
+                </div>
+                <div class="boxes">
+                    <p>Amazon Music</p>
+                    <a href="#">Stream millions</a>
+                    <a href="#">of songs</a>
+                </div>
+                <div class="boxes">
+                    <p>Amazon Music</p>
+                    <a href="#">Stream millions</a>
+                    <a href="#">of songs</a>
+                </div>
+                <div class="boxes">
+                    <p>Amazon Music</p>
+                    <a href="#">Stream millions</a>
+                    <a href="#">of songs</a>
+                </div>
+            </div>
+            <div class="fouth-footer">
+                
+                <div class="boxes">
+                    <p>Amazon Music</p>
+                    <a href="#">Stream millions</a>
+                    <a href="#">of songs</a>
+                </div>
+                <div class="boxes">
+                    <p>Amazon Music</p>
+                    <a href="#">Stream millions</a>
+                    <a href="#">of songs</a>
+                </div>
+                <div class="boxes">
+                    <p>Amazon Music</p>
+                    <a href="#">Stream millions</a>
+                    <a href="#">of songs</a>
+                </div>
+                <div class="boxes">
+                    <p>Amazon Music</p>
+                    <a href="#">Stream millions</a>
+                    <a href="#">of songs</a>
+                </div>
+                <div class="boxes">
+                    <p>Amazon Music</p>
+                    <a href="#">Stream millions</a>
+                    <a href="#">of songs</a>
+                </div>
+                <div class="boxes">
+                    <p>Amazon Music</p>
+                    <a href="#">Stream millions</a>
+                    <a href="#">of songs</a>
+                </div>
+                <div class="boxes">
+                    <p>Amazon Music</p>
+                    <a href="#">Stream millions</a>
+                    <a href="#">of songs</a>
+                </div>
+            </div>
+            <div class="fouth-footer">
+                
+                <div class="boxes">
+                    <p>Amazon Music</p>
+                    <a href="#">Stream millions</a>
+                    <a href="#">of songs</a>
+                </div>
+                <div class="boxes">
+                    <p>Amazon Music</p>
+                    <a href="#">Stream millions</a>
+                    <a href="#">of songs</a>
+                </div>
+                <div class="boxes">
+                    <p>Amazon Music</p>
+                    <a href="#">Stream millions</a>
+                    <a href="#">of songs</a>
+                </div>
+                <div class="boxes">
+                    <p>Amazon Music</p>
+                    <a href="#">Stream millions</a>
+                    <a href="#">of songs</a>
+                </div>
+                <div class="boxes">
+                    <p>Amazon Music</p>
+                    <a href="#">Stream millions</a>
+                    <a href="#">of songs</a>
+                </div>
+                <div class="boxes">
+                    <p>Amazon Music</p>
+                    <a href="#">Stream millions</a>
+                    <a href="#">of songs</a>
+                </div>
+                <div class="boxes">
+                    <p>Amazon Music</p>
+                    <a href="#">Stream millions</a>
+                    <a href="#">of songs</a>
+                </div>
+            </div>
+            <div class="fouth-footer last">
+                
+                <div class="boxes lo">
+                    <p>Amazon Music</p>
+                    <a href="#">Stream millions</a>
+                    <a href="#">of songs</a>
+                </div>
+                <div class="boxes lo">
+                    <p>Amazon Music</p>
+                    <a href="#">Stream millions</a>
+                    <a href="#">of songs</a>
+                </div>
+                <div class="boxes lo">
+                    <p>Amazon Music</p>
+                    <a href="#">Stream millions</a>
+                    <a href="#">of songs</a>
+                </div>
+                <div class="boxes lo">
+                    <p>Amazon Music</p>
+                    <a href="#">Stream millions</a>
+                    <a href="#">of songs</a>
+                </div>
+                <div class="boxes lo">
+                    <p>Amazon Music</p>
+                    <a href="#">Stream millions</a>
+                    <a href="#">of songs</a>
+                </div>
+               
+            </div>
+
+    </footer>
+    <!-- <div class="height"></div> -->
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/ce1b79714e.js" crossorigin="anonymous"></script>
+</body>
+</html>
